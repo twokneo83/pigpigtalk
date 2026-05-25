@@ -114,12 +114,18 @@ function ResultContent() {
         }
       }
 
+      const titleText = region && age && subsidies.length > 0
+        ? `[꿀꿀이톡] ${region} 거주 ${age} 어르신을 위한 혜택 ${subsidies.length}건을 찾았습니다!`
+        : '[꿀꿀이톡] 어르신들 숨은 국가 지원금·복지혜택 찾기';
+      
+      const descText = '지금 바로 어르신들께서 받을 수 있는 맞춤형 지원금과 혜택을 3초 만에 무료로 확인해 보세요!';
+
       window.Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-          title: '[꿀꿀이톡]어르신들 숨은 국가 지원금•복지혜택 찾기',
-          description: '지금 바로 어르신들께서 받을 수 있는 맞춤형 지원금과 혜택을 3초 만에 무료로 확인해 보세요!',
-          imageUrl: window.location.origin + '/characters/piggy4.png',
+          title: titleText,
+          description: descText,
+          imageUrl: window.location.origin + '/characters/kakao_banner.png',
           link: {
             mobileWebUrl: window.location.origin,
             webUrl: window.location.origin,
@@ -127,7 +133,7 @@ function ResultContent() {
         },
         buttons: [
           {
-            title: '내 지원금 확인하러 가기',
+            title: '내 지원금 무료로 확인하기 🔍',
             link: {
               mobileWebUrl: window.location.origin,
               webUrl: window.location.origin,
