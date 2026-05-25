@@ -126,6 +126,8 @@ function ResultContent() {
           title: titleText,
           description: descText,
           imageUrl: window.location.origin + '/characters/kakao_banner.png?v=' + new Date().getTime(),
+          imageWidth: 800,
+          imageHeight: 400,
           link: {
             mobileWebUrl: window.location.origin,
             webUrl: window.location.origin,
