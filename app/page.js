@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className="container fade-in" style={{ justifyContent: 'center', alignItems: 'center' }}>
       
-      <div style={{ width: '240px', height: '240px', marginBottom: '0', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 2 }}>
+      <div style={{ width: '210px', height: '210px', marginBottom: '-10px', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 2 }}>
         {randomPig && (
           <img 
             src={randomPig} 
@@ -78,10 +78,10 @@ export default function Home() {
       <img 
         src="/logo-pigpigtalk.png" 
         alt="꿀꿀이톡 로고" 
-        style={{ width: '220px', objectFit: 'contain', marginBottom: '1.5rem', zIndex: 3 }} 
+        style={{ width: '200px', objectFit: 'contain', marginBottom: '1rem', zIndex: 3 }} 
       />
-      <p className="subtitle" style={{ lineHeight: '1.6', wordBreak: 'keep-all' }}>
-        가짜뉴스는 이제 그만! 시니어 분들을 위한<br/>숨은 내 진짜 지원금, 3초 만에 찾아보세요!
+      <p className="subtitle" style={{ lineHeight: '1.5', wordBreak: 'keep-all', marginTop: '0', marginBottom: '0.5rem' }}>
+        시니어분들을 위한 나의 숨은 지원금,<br/>3초만에 찾아보세요!
       </p>
 
       {/* 실시간 혜택 건수 텍스트 */}
@@ -89,8 +89,8 @@ export default function Home() {
         color: '#0052CC',
         fontSize: '1rem',
         fontWeight: 'bold',
-        marginTop: '1.5rem',
-        marginBottom: '-1rem',
+        marginTop: '0.5rem',
+        marginBottom: '0',
         zIndex: 1
       }}>
         현재 총 <span style={{ color: '#FF9500', textDecoration: 'underline', textUnderlineOffset: '3px', fontSize: '1.15rem', display: 'inline-block', minWidth: '70px', textAlign: 'center' }}>{count.toLocaleString()}건</span>의 혜택을 찾았습니다!
@@ -100,13 +100,13 @@ export default function Home() {
       <button
         onClick={() => router.push('/survey')}
         className="btn-primary"
-        style={{ marginTop: '2rem', backgroundColor: '#0052CC', color: '#FFFFFF', border: 'none', padding: '1.5rem', fontSize: '1.3rem' }}
+        style={{ marginTop: '1rem', backgroundColor: '#0052CC', color: '#FFFFFF', border: 'none', padding: '1.2rem', fontSize: '1.3rem', width: '100%' }}
       >
-        내 숨은 지원금 바로 찾기 🔍
+        내 숨은 지원금 바로 찾기
       </button>
 
-      <p style={{ marginTop: '1.5rem', fontSize: '1rem', color: 'var(--text-light)', textAlign: 'center' }}>
-        회원가입 없이 3초 만에<br />무료로 확인해 보세요!
+      <p style={{ marginTop: '1rem', fontSize: '1rem', color: 'var(--text-light)', textAlign: 'center' }}>
+        회원가입 없이 무료로 확인해보세요!
       </p>
 
       {/* 저작권 표기 */}
