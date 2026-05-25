@@ -81,7 +81,7 @@ export default function Home() {
         style={{ width: '200px', objectFit: 'contain', marginBottom: '1rem', zIndex: 3 }} 
       />
       <p className="subtitle" style={{ lineHeight: '1.5', wordBreak: 'keep-all', marginTop: '0', marginBottom: '0.5rem' }}>
-        시니어분들을 위한 나의 숨은 지원금,<br/>3초만에 찾아보세요!
+        시니어분들을 위한 나의 숨은<br/>지원금, 3초만에 찾아보세요!
       </p>
 
       {/* 실시간 혜택 건수 텍스트 */}
