@@ -523,7 +523,7 @@ function ResultContent() {
 
           {/* 카카오톡 채널 추가 버튼 */}
           <button 
-            onClick={() => window.open('https://pf.kakao.com/_xxxxxx', '_blank')} 
+            onClick={() => window.open('http://pf.kakao.com/_RxmpbX', '_blank')} 
             style={{ 
               width: '100%', padding: '1rem', borderRadius: '12px',
               backgroundColor: '#FAE100', color: '#000', border: 'none',
