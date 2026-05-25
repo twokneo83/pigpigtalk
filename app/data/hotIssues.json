@@ -1,0 +1,24 @@
+[
+  {
+    "title": "2026 전국민 고유가 특별 지원금",
+    "department": "기획재정부",
+    "showDepartment": true,
+    "contact": "정부24 콜센터 (1588-2188) 또는 관할 주민센터",
+    "showContact": true,
+    "target": "전국민 (소득 및 연령 무관)",
+    "showTarget": true,
+    "description": "최근 급격한 유가 및 물가 상승으로 인한 가계 부담을 덜어드리기 위해 지급되는 특별 긴급 현금 지원금입니다.",
+    "showDescription": true,
+    "content": "최근 급격한 유가 및 물가 상승으로 인한 가계 부담을 덜어드리기 위해 지급되는 특별 긴급 현금 지원금입니다.\n\n- 지원 금액: 1인당 25만원 (4인 가구 기준 최대 100만원)\n- 지급 방식: 현금 계좌이체 또는 지역화폐 충전\n- 사용처: 제한 없음 (단, 대형마트 및 유흥업소 제외)\n\n전국민 누구나 잊지 말고 신청 기한 내에 꼭 신청하셔서 혜택을 받으시기 바랍니다.",
+    "showContent": true,
+    "howToApply": "온라인 정부24 홈페이지 또는 관할 주민센터 방문 신청",
+    "showHowToApply": true,
+    "category": "긴급",
+    "endDate": "예산 소진 시 조기 마감 (선착순)",
+    "showEndDate": true,
+    "isVisible": true,
+    "url": "https://www.gov.kr",
+    "id": "hot_001",
+    "isHot": true
+  }
+]

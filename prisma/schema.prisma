@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  kakaoId   String   @unique
+  ageRange  String?
+  gender    String?
+  createdAt DateTime @default(now())
+}
+
+model HotIssue {
+  id              String   @id @default(cuid())
+  title           String
+  department      String?
+  showDepartment  Boolean  @default(true)
+  contact         String?
+  showContact     Boolean  @default(true)
+  target          String?
+  showTarget      Boolean  @default(true)
+  description     String?
+  showDescription Boolean  @default(true)
+  content         String?
+  showContent     Boolean  @default(true)
+  howToApply      String?
+  showHowToApply  Boolean  @default(true)
+  category        String?
+  endDate         String?
+  showEndDate     Boolean  @default(true)
+  isVisible       Boolean  @default(true)
+  url             String?
+  isHot           Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
