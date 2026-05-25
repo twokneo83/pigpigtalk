@@ -57,7 +57,7 @@ export default function Home() {
 
   const handleKakaoLogin = () => {
     const clientId = "718745ecca8337c62f44faf199caa826";
-    const redirectUri = "http://localhost:3000/api/auth/kakao";
+    const redirectUri = typeof window !== 'undefined' ? `${window.location.origin}/api/auth/kakao` : "http://localhost:3000/api/auth/kakao";
     window.location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code`;
   };
 

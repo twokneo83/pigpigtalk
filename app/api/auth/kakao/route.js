@@ -4,7 +4,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
+  const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
 
   if (!code) {
@@ -12,7 +12,7 @@ export async function GET(request) {
   }
 
   const clientId = "718745ecca8337c62f44faf199caa826";
-  const redirectUri = "http://localhost:3000/api/auth/kakao";
+  const redirectUri = `${origin}/api/auth/kakao`;
 
   try {
     // 1. 카카오 REST API에 인가 코드를 전달하여 액세스 토큰 발급
