@@ -1,6 +1,7 @@
 import "./globals.css";
 import KakaoScript from "../components/KakaoScript";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <KakaoScript />
         {children}
         <Analytics />
+        <SpeedInsights />
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}
