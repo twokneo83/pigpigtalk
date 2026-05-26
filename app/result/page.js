@@ -533,12 +533,12 @@ function ResultContent() {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
                 <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
               </svg>
-              <span style={{ fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '-0.5px' }}>꿀꿀이톡 밴드 가입하고 알림받기</span>
+              <span style={{ fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '-0.5px', wordBreak: 'keep-all', textAlign: 'center', lineHeight: '1.3' }}>꿀꿀이톡 밴드 가입하고 알림받기</span>
             </div>
-            <span style={{ fontSize: '0.95rem', opacity: 0.95, letterSpacing: '-0.3px' }}>새로운 정부 지원금이 나오면 평생 무료로 알려드려요!</span>
+            <span style={{ fontSize: '0.95rem', opacity: 0.95, letterSpacing: '-0.3px', wordBreak: 'keep-all', textAlign: 'center', marginTop: '4px' }}>새로운 정부 지원금이 나오면 평생 무료로 알려드려요!</span>
           </button>
 
           {/* 후원하기 버튼 (상세페이지 하단 추가) */}
@@ -550,8 +550,8 @@ function ResultContent() {
               fontWeight: 'bold', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', cursor: 'pointer'
             }}
           >
-            <span>꿀꿀이에게 잘했다고 따뜻한 마음 전하기 🐷</span>
-            <span style={{ fontSize: '0.85rem', fontWeight: 'normal', opacity: 0.9, textAlign: 'center', wordBreak: 'keep-all' }}>여러분의 후원으로 꿀꿀이가 계속 혜택을<br/>찾아오는데 큰 힘이 됩니다!</span>
+            <span style={{ wordBreak: 'keep-all', textAlign: 'center', lineHeight: '1.3' }}>꿀꿀이에게 잘했다고 따뜻한 마음 전하기 🐷</span>
+            <span style={{ fontSize: '0.85rem', fontWeight: 'normal', opacity: 0.9, textAlign: 'center', wordBreak: 'keep-all', marginTop: '4px' }}>여러분의 후원으로 꿀꿀이가 계속 혜택을<br/>찾아오는데 큰 힘이 됩니다!</span>
           </button>
         </div>
       )}
@@ -765,13 +765,32 @@ function ResultContent() {
           </svg>
           카톡으로 지원금•혜택 공유하기
         </button>
+
+        {/* 네이버 밴드 가입 버튼 (리스트 하단) */}
+        <button 
+          onClick={() => window.open('https://band.us/n/a7a0ba89r9IaV', '_blank')} 
+          style={{ 
+            width: '100%', padding: '1.2rem', borderRadius: '12px',
+            backgroundColor: '#03C75A', color: '#FFFFFF', border: 'none',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
+            cursor: 'pointer', boxShadow: '0 4px 6px rgba(3, 199, 90, 0.2)'
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+            </svg>
+            <span style={{ fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '-0.5px', wordBreak: 'keep-all', textAlign: 'center', lineHeight: '1.3' }}>꿀꿀이톡 밴드 가입하고 알림받기</span>
+          </div>
+          <span style={{ fontSize: '0.95rem', opacity: 0.95, letterSpacing: '-0.3px', wordBreak: 'keep-all', textAlign: 'center', marginTop: '4px' }}>새로운 정부 지원금이 나오면 평생 무료로 알려드려요!</span>
+        </button>
         
         <button 
           className="btn-accent heartbeat-btn" 
           onClick={handleDonationClick} 
-          style={{ padding: '1.2rem', fontSize: '1.2rem', border: 'none', borderRadius: '14px' }}
+          style={{ padding: '1.2rem', fontSize: '1.2rem', border: 'none', borderRadius: '14px', wordBreak: 'keep-all', lineHeight: '1.3' }}
         >
-          꿀꿀이에게 고맙다고 후원해주기 💖
+          꿀꿀이에게 고맙다고 따뜻한 마음 전하기 💖
         </button>
         
         <button 
