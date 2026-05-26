@@ -323,7 +323,7 @@ function ResultContent() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <button 
-                onClick={() => window.open('https://link.kakaopay.com/_/임시링크', '_blank')}
+                onClick={() => window.open('https://qr.kakaopay.com/Ej8Bxpxxy', '_blank')}
                 style={{
                   width: '100%', padding: '1.2rem', borderRadius: '14px',
                   backgroundColor: '#FAE100', color: '#111', fontWeight: 'bold', fontSize: '1.15rem',
