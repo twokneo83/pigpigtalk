@@ -564,27 +564,35 @@ function ResultContent() {
         ({dateString})
       </p>
 
+      <div style={{ textAlign: 'center', marginBottom: '0.8rem', opacity: 0.9 }}>
+        <span style={{ backgroundColor: '#F0F5FF', color: '#0052CC', padding: '6px 16px', borderRadius: '20px', fontSize: '0.95rem', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '6px', boxShadow: '0 2px 4px rgba(0,82,204,0.1)' }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          화면을 밑으로 내려서 확인하세요
+        </span>
+      </div>
+
       <div style={{ 
         display: 'flex', 
         flexWrap: 'wrap', 
-        gap: '0.8rem', 
-        marginBottom: '1.5rem',
-        paddingBottom: '0.5rem'
+        gap: '0.4rem', 
+        marginBottom: '1rem',
+        justifyContent: 'center'
       }}>
         {categories.map((cat, idx) => (
           <button 
             key={idx}
             onClick={() => setActiveCategory(cat)}
             style={{
-              padding: '0.6rem 1.2rem',
-              borderRadius: '20px',
-              border: activeCategory === cat ? 'none' : '1px solid #ddd',
+              padding: '0.4rem 0.8rem',
+              fontSize: '0.9rem',
+              borderRadius: '16px',
+              border: activeCategory === cat ? 'none' : '1px solid #eee',
               backgroundColor: activeCategory === cat ? '#0052CC' : '#fff',
               color: activeCategory === cat ? '#fff' : '#555',
               fontWeight: 'bold',
               whiteSpace: 'nowrap',
               flexShrink: 0,
-              boxShadow: activeCategory === cat ? '0 2px 4px rgba(0,82,204,0.3)' : 'none',
+              boxShadow: activeCategory === cat ? '0 2px 4px rgba(0,82,204,0.3)' : '0 1px 2px rgba(0,0,0,0.05)',
               transition: 'all 0.2s'
             }}
           >
