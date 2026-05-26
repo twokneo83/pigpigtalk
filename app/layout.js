@@ -9,6 +9,9 @@ export const metadata = {
   description: "60대 이상 시니어 사용자를 위한 정부 보조금 조회 및 카카오톡 공유 서비스",
   verification: {
     google: "30QQy_IAeJy1a09G7evVwRIDP6Yg8v3lqCRKOibZGdI",
+    other: {
+      "naver-site-verification": "edb8d0f8223f7a2d011ace5ff787b92cbbd22283",
+    },
   },
 };
 
