@@ -521,23 +521,24 @@ function ResultContent() {
             </button>
           </div>
 
-          {/* 카카오톡 채널 추가 버튼 */}
+          {/* 네이버 밴드 가입 버튼 */}
           <button 
-            onClick={() => window.open('http://pf.kakao.com/_RxmpbX', '_blank')} 
+            onClick={() => window.open('https://band.us/n/a7a0ba89r9IaV', '_blank')} 
             style={{ 
-              width: '100%', padding: '1rem', borderRadius: '12px',
-              backgroundColor: '#FAE100', color: '#000', border: 'none',
+              width: '100%', padding: '1.2rem', borderRadius: '12px',
+              backgroundColor: '#03C75A', color: '#FFFFFF', border: 'none',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
-              marginBottom: '1rem', cursor: 'pointer'
+              marginBottom: '1.5rem', cursor: 'pointer',
+              boxShadow: '0 4px 6px rgba(3, 199, 90, 0.2)'
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#3A1D1D" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 3C5.9 3 1 6.8 1 11.5c0 2.8 1.6 5.4 4.1 7.1-.2 1.3-1 3.5-1 3.7 0 .2.2.3.4.2 1.1-.7 4.1-2.8 4.6-3.2 1 .3 2 .4 3 .4 6.1 0 11-3.8 11-8.5S18.1 3 12 3z"/>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
               </svg>
-              <span style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>꿀꿀이톡 채널 추가하기</span>
+              <span style={{ fontWeight: 'bold', fontSize: '1.2rem', letterSpacing: '-0.5px' }}>꿀꿀이톡 밴드 가입하고 알림받기</span>
             </div>
-            <span style={{ fontSize: '0.9rem' }}>새로운 보조금이 생기면 카톡으로 알려드려요!</span>
+            <span style={{ fontSize: '0.95rem', opacity: 0.95, letterSpacing: '-0.3px' }}>새로운 정부 지원금이 나오면 평생 무료로 알려드려요!</span>
           </button>
 
           {/* 후원하기 버튼 (상세페이지 하단 추가) */}
