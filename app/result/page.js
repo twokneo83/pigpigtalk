@@ -550,7 +550,7 @@ function ResultContent() {
               fontWeight: 'bold', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', cursor: 'pointer'
             }}
           >
-            <span style={{ wordBreak: 'keep-all', textAlign: 'center', lineHeight: '1.3' }}>꿀꿀이에게 잘했다고 따뜻한 마음 전하기 🐷</span>
+            <span style={{ wordBreak: 'keep-all', textAlign: 'center', lineHeight: '1.4' }}>꿀꿀이에게 잘했다고<br/>따뜻한 마음 전하기 🐷</span>
             <span style={{ fontSize: '0.85rem', fontWeight: 'normal', opacity: 0.9, textAlign: 'center', wordBreak: 'keep-all', marginTop: '4px' }}>여러분의 후원으로 꿀꿀이가 계속 혜택을<br/>찾아오는데 큰 힘이 됩니다!</span>
           </button>
         </div>
@@ -788,9 +788,9 @@ function ResultContent() {
         <button 
           className="btn-accent heartbeat-btn" 
           onClick={handleDonationClick} 
-          style={{ padding: '1.2rem', fontSize: '1.2rem', border: 'none', borderRadius: '14px', wordBreak: 'keep-all', lineHeight: '1.3' }}
+          style={{ padding: '1.2rem', fontSize: '1.2rem', border: 'none', borderRadius: '14px', wordBreak: 'keep-all', lineHeight: '1.4' }}
         >
-          꿀꿀이에게 고맙다고 따뜻한 마음 전하기 💖
+          꿀꿀이에게 고맙다고<br/>따뜻한 마음 전하기 💖
         </button>
         
         <button 
