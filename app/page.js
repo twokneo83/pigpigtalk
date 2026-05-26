@@ -99,8 +99,8 @@ export default function Home() {
       {/* 시작 버튼 */}
       <button
         onClick={() => router.push('/survey')}
-        className="btn-primary"
-        style={{ marginTop: '1rem', backgroundColor: '#0052CC', color: '#FFFFFF', border: 'none', padding: '1.2rem', fontSize: '1.3rem', width: '100%' }}
+        className="btn-primary heartbeat-btn"
+        style={{ marginTop: '1rem', backgroundColor: '#0052CC', color: '#FFFFFF', border: 'none', padding: '1.2rem', fontSize: '1.3rem', width: '100%', boxShadow: '0 4px 12px rgba(0,82,204,0.3)' }}
       >
         내 숨은 지원금 바로 찾기
       </button>
