@@ -403,7 +403,7 @@ function ResultContent() {
               )}
             </div>
 
-            <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '1.5rem', lineHeight: '1.3', wordBreak: 'keep-all' }}>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '1.5rem', lineHeight: '1.3', wordBreak: 'keep-all', color: '#0052CC' }}>
               {selectedItem.title}
             </h2>
 
