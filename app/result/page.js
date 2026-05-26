@@ -327,7 +327,7 @@ function ResultContent() {
                 style={{
                   width: '100%', padding: '1.2rem', borderRadius: '14px',
                   backgroundColor: '#FAE100', color: '#111', fontWeight: 'bold', fontSize: '1.15rem',
-                  border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
+                  border: 'none', wordBreak: 'keep-all', lineHeight: '1.4'
                 }}
               >
                 카카오페이로 1초 만에 후원하기
